@@ -1,0 +1,14 @@
+.btn-input{
+    border-radius: 25px;
+    text-align: center;
+  }
+  .btn-search:hover{
+    background-color:#ff385c;
+    color:  white;
+  }
+  .btn-search{
+    border-radius: 25px;
+    background-color: #ff385c;
+    color: white;
+    display:inline;
+  }

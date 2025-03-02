@@ -1,0 +1,148 @@
+.nav-link{
+    color:#222222 !important;
+}
+.navbar{
+    font-size: 1.25rem !important;
+    position: sticky !important;
+    top:0;
+}
+.fa-regular.fa-compass{
+    color:#fe424d !important;
+    font-size: 1.25rem !important;
+} 
+.f-info-socials i{
+    font-size: 1.25rem;
+    margin-right: 0.45rem;
+}
+.f-info-socials,.f-info-links{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items:center;
+    justify-content: center;
+    background-color: lightgray !important;
+}
+.f-info-links a{
+    text-decoration:none !important;
+    color:#222222 !important;
+    margin-right: 0.25rem;
+}
+.f-info-links a:hover{
+    text-decoration: underline !important;
+}
+.f-info{
+    align-items:center;
+    justify-content: center;
+    align-items:space-evenly;
+    display:flex;
+    flex-wrap:wrap;
+    height:3rem;
+    background-color: lightgray !important;
+    position:relative bottom !important;
+    width:100%;
+}
+.front{
+    border: none !important;
+    /* width: 100% !important; */
+    display: flex !important;
+    /* flex-direction: column !important; */
+    justify-content: center !important;
+    align-items: center !important;
+}
+.card-link{
+    text-decoration: none;
+    width: 100% !important;
+}
+.card-img-overlay{
+    opacity:0 !important;
+}
+.card-img-overlay:hover{
+    opacity:0.25 !important;
+    background-color: white;
+}
+body{
+    /* justify-content: center;
+    align-items: center;  */
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+}
+.head{
+    align-items: center !important;
+    justify-content: center !important;
+}
+.color{
+    background-color:#fe424d !important;
+    border:none !important;
+    width: 5rem !important;
+    margin-right: 5rem !important;
+    padding-left: -5rem !important;
+}
+.card-image{
+    height:30vh;
+    min-width :300px;
+    /* max-width: 18rem; */
+    /* margin-left: 10%; */
+    margin-right: 10%;
+    margin:0 auto;
+    display: block;
+}
+.card-text{
+    justify-content: center !important;
+    align-items: center !important;
+    margin:auto ;
+}
+.card-body{ 
+    align-items: center !important;
+    justify-content: center !important;
+}
+.list a{
+    text-decoration: none !important;
+}
+.butns{
+    justify-content: space-evenly !important;
+    align-items:start !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin:10px auto !important;
+    padding-left: -10rem !important;
+}
+.del{
+    margin-left: 5rem !important;
+}
+
+#map { 
+    height: 400px;
+    width: 80vh;
+ }
+ #filters{
+    margin-top: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters{
+    text-align: center;
+    margin-right: 2rem;
+}
+.filters i{
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+.filters i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.tax-switch{
+    border: 0.25px solid black;
+    height:3rem;
+    align-items: center;
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+.tax-switch-amt{
+    display:none;
+}
