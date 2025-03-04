@@ -69,6 +69,16 @@ module.exports.RenderingEdit=async(req,res)=>{
 
 module.exports.editListing=async(req,res)=>{
     let {id}=req.params;
+    let location=req.body.Listing.location;
+    await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(location)}`)
+    .then(response => response.json())
+    .then(data => {
+        if (data.length === 0) {
+            console.error("Error: No location found");
+            return;
+        }
+        req.body.Listing.coordinates=[data[0].lat,data[0].lon];
+    })
     let list =await listing.findByIdAndUpdate(id,{...req.body.Listing});
     if(typeof req.file!=='undefined'){
         let url=req.file.path;
