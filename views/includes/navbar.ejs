@@ -8,17 +8,18 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" href="/listings">Explore</a>
+          <a class="nav-link" href="/listings/new">Add new One</a>
         </div>
         <div class="navbar-nav ms-auto">
           <div class="container-fluid">
             <form class="d-flex" role="search">
-              <input class="form-control me-2 btn-input" type="search" placeholder="Search destinations" >
+              <input class="form-control me-2 btn-input" type="search" placeholder="Search destinations" id="searchInput">
               <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
           </div>
         </div>
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+          
           <% if (!currentUser) { %>
             <a class="nav-link" href="/users/login"><b>Login</b></a>
             <a class="nav-link" href="/users/signup"><b>Signup</b></a>

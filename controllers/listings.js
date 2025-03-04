@@ -35,7 +35,7 @@ module.exports.createListing=async(req,res)=>{
         newListing.coordinates=[data[0].lat,data[0].lon];
     });
     await newListing.save();
-    console.log(newListing);
+    // console.log(newListing);
     req.flash("success","Listing added successfully");
     // res.render("new.ejs");
     res.redirect('/listings');

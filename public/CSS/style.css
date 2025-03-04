@@ -10,7 +10,8 @@
     color:#fe424d !important;
     font-size: 1.25rem !important;
 } 
-.f-info-socials i{
+.f-info-socials a i{
+    color:#222222 !important;
     font-size: 1.25rem;
     margin-right: 0.45rem;
 }
@@ -48,7 +49,12 @@
     /* flex-direction: column !important; */
     justify-content: center !important;
     align-items: center !important;
+    flex-wrap: nowrap !important;
+    margin-right:7px ;
 }
+/* #listBox a{
+    margin-right:7px !important;
+} */
 .card-link{
     text-decoration: none;
     width: 100% !important;
@@ -61,6 +67,7 @@
     background-color: white;
 }
 body{
+    font-family: "plus Jakarta Sans",sans-serif !important;
     /* justify-content: center;
     align-items: center;  */
     min-height:100vh;
@@ -69,6 +76,7 @@ body{
 }
 .container{
     flex: 1;
+    /* flex-wrap: nowrap; */
 }
 .head{
     align-items: center !important;
@@ -118,31 +126,3 @@ body{
     height: 400px;
     width: 80vh;
  }
- #filters{
-    margin-top: 0.7rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-.filters{
-    text-align: center;
-    margin-right: 2rem;
-}
-.filters i{
-    justify-content: center;
-    align-items: center;
-    opacity: 0.7;
-}
-.filters i:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-.tax-switch{
-    border: 0.25px solid black;
-    height:3rem;
-    align-items: center;
-    padding: 0.5rem;
-    margin-left: 2rem;
-}
-.tax-switch-amt{
-    display:none;
-}

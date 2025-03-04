@@ -35,13 +35,13 @@
                     </div>
                 </div>
             <% } %>
-            <hr>
+            <% if(currentUser){ %>
+                <hr>
+            <% } %>
         </div>
-        
     </div>
     <div class="row mb-3 review offset-3" >
         <% if(currentUser){ %>
-            
             <form method="post" class="needs-validation" action="/listings/<%= id %>/review/new" novalidate>
                 <h3 style="justify-content: center;align-items: center;">Leave a Review</h3>
                 <fieldset class="starability-slot">
@@ -72,10 +72,10 @@
                 <hr>
                 <h3 >All Reviews</h3>
                 <% for(let review1 of list.reviews){ %>
-                    <div class="col-5">
+                    <div class="col-5" style="min-width: 180px;">
                         <div class="card">
                             <h5 class="card-title">@<%= review1.author.username %></h5>
-                            <h6 class="card-text"><%= review1.content %></h6>
+                            <p class="card-text"><%= review1.content %></p>
                             <p class="starability-result" data-rating=<%= review1.rating%>>
                                 Rated:<%= review1.rating%> stars
                               </p>
@@ -85,12 +85,12 @@
                         </div>
                     </div>
                 <% } %>
-                <hr>
             <% } %>
             
         </div>
         
         <div class="row col-7 mb-4 mr-2 mt-3">
+            <hr>
             <h3>Where you'll be</h3>
             <div id="map">
 

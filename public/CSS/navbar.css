@@ -12,3 +12,54 @@
     color: white;
     display:inline;
   }
+  
+  #filters{
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping */
+    gap: 10px; /* Adds space between items */
+    padding: 10px;
+    scrollbar-width: thin; 
+}
+.filters{
+    text-align: center;
+    margin-right: 2rem;
+}
+.filters i{
+    opacity: 0.7; 
+    flex: 0 0 auto; /* Prevents items from shrinking */
+    /* width: 300px; Set a fixed width for each item */
+}
+.filters i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.tax-switch{
+    border: 0.25px solid black;
+    height:3rem;
+    align-items: center;
+    padding: 0.5rem;
+    /* margin-left: 2rem; */
+}
+.tax-switch-amt{
+    display:none;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #filters {
+        justify-content: start; /* Align items to the left */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping */
+        padding-bottom: 10px;
+    }
+
+    .filters {
+        flex: 0 0 auto; /* Prevent items from shrinking */
+    }
+
+    .tax-switch {
+        margin-left: 10px;
+    }
+}

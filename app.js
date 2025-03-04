@@ -36,7 +36,7 @@ const store=MongoStore.create({
     crypto:{
         secret:"thisisasecret"
     },
-    touchAfter:24*60*60
+    touchAfter:24*60*60,
 });
 
 store.on("error",function(e){
@@ -65,9 +65,9 @@ async function main(){
     await mongoose.connect(db_url);
 }
 
-// app.get('/',wrapAsync(async(req,res)=>{
-//     res.send("send response");
-// }));
+app.get('/',wrapAsync(async(req,res)=>{
+    res.redirect('/listings');
+}));
 
 app.use(session(sessionOptions));
 app.use(flash());
