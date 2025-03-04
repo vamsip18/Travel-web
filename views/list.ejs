@@ -40,7 +40,7 @@
             <% } %>
         </div>
     </div>
-    <div class="row mb-3 review offset-3" >
+    <div class="row mb-3 review offset-3" style="width: 75%;">
         <% if(currentUser){ %>
             <form method="post" class="needs-validation" action="/listings/<%= id %>/review/new" novalidate>
                 <h3 style="justify-content: center;align-items: center;">Leave a Review</h3>
@@ -89,25 +89,13 @@
             
         </div>
         
-        <div class="row col-7 mb-4 mr-2 mt-3">
+        <div class="row">
             <hr>
             <h3>Where you'll be</h3>
             <div id="map">
 
             </div>
-            <div class="map"></div>
-                <!-- <script>
-                    // TO MAKE THE MAP APPEAR YOU MUST
-                    // ADD YOUR ACCESS TOKEN FROM
-                    // https://account.mapbox.com
-                    mapboxgl.accessToken = "<%= process.env.MAP_TOKEN %>";
-                    const map = new mapboxgl.Map({
-                        container: 'map', // container ID
-                        center: [-74.5, 40], // starting position [lng, lat]. Note that lat must be set between -90 and 90
-                        zoom: 9 // starting zoom
-                    });
-                </script> -->
-            <!-- </div> -->
+            
         </div>
    </div>
 </div>
