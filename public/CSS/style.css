@@ -1,4 +1,7 @@
-.nav-link{
+
+
+
+ .nav-link{
     color:#222222 !important;
 }
 .navbar{
@@ -125,4 +128,6 @@ body{
 #map { 
     height: 400px;
     width: 80vh;
+    /* justify-content: center !important;
+    align-items: center !important; */
  }
