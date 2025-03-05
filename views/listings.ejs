@@ -67,7 +67,7 @@
             <% for (let list of Listing ) { %>
                 <div class="col " id="listBox" >
                     <a href="/listings/<%= list._id %>"   >
-                        <div class="card front" style="width: 23rem; height: 100%;">
+                        <div class="card front" id='front' style="width: 23rem; height: 100%;">
                             <img src= <%= list.image.url %> class="card-img-top" alt="listing image" style="height: 15rem;width: 100%;border-radius:0.75rem">
                             <div class="card-img-overlay">
                             </div>
