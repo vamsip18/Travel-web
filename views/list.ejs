@@ -1,8 +1,9 @@
 <%layout('/layout/BoilerPlate')-%>
+<body>
 <script>
     const coordinates=<%- JSON.stringify(list.coordinates)||JSON.stringify([28.704, -0.09]) %>;
+    console.log("Coordinates:", coordinates);
 </script>
-<body>
     <div class="row mb-3">
         <div class="card front" >
             <div class="card-title">
