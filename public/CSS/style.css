@@ -2,13 +2,13 @@
     color:#222222 !important;
 }
 .navbar{
-    color:A0BFCE !important;
+    background-color:A0BFCE !important;
     font-size: 1.25rem !important;
     position: sticky !important;
     top:0;
 }
-.footer{
-     color:A0BFCE !important;
+.f-info{
+     background-color:A0BFCE !important;
 }
 .fa-regular.fa-compass{
     color:#fe424d !important;
