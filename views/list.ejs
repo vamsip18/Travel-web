@@ -1,11 +1,11 @@
 <%layout('/layout/BoilerPlate')-%>
 <body>
-<script>
-    const coordinates=<%- JSON.stringify(list.coordinates)||JSON.stringify([28.704, -0.09]) %>;
-    console.log("Coordinates:", coordinates);
-</script>
+    <script>
+        const coordinates=<%- JSON.stringify(list.coordinates)||JSON.stringify([28.704, -0.09]) %>;
+        console.log("Coordinates:", coordinates);
+    </script>
     <div class="row mb-3">
-        <div class="card front" >
+        <div class="card front" id="crd">
             <div class="card-title">
                 <h3 class="card-title" >
                     <b><%= list.title %></b><br>
