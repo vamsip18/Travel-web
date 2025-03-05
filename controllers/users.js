@@ -31,7 +31,7 @@ module.exports.renderingLogin=(req,res)=>{
 
 module.exports.login=async(req,res)=>{
     let {username,password}=req.body;
-    req.flash("success","Welcome back to Wanderlust");
+    req.flash("success","Welcome back to VMKS Travels");
     let redirectUrl=res.locals.redirectUrl || '/listings';
     res.redirect(redirectUrl);
 }
