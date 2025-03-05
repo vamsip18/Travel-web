@@ -1,13 +1,19 @@
- .nav-link{
+.nav-link{
     color:#222222 !important;
+}
+.sticky-top{
+    background-color:#A0BFCE !important;
+}
+#navbar{
+    background-color:#A0BFCE !important;
+}
+#front,#crd{
+    background-color: #F1EFEC !important;
 }
 .navbar{
     font-size: 1.25rem !important;
     position: sticky !important;
     top:0;
-}
-.f-info{
-     background-color:A0BFCE !important;
 }
 .fa-regular.fa-compass{
     color:#fe424d !important;
@@ -24,7 +30,7 @@
     padding: 0;
     align-items:center;
     justify-content: center;
-    background-color: lightgray !important;
+    background-color:#A0BFCE !important;
 }
 .f-info-links a{
     text-decoration:none !important;
@@ -41,23 +47,18 @@
     display:flex;
     flex-wrap:wrap;
     height:3rem;
-    background-color: A0BFCE !important;
+    background-color:#A0BFCE !important;
     position:relative bottom !important;
     width:100%;
 }
 .front{
     border: none !important;
-    /* width: 100% !important; */
     display: flex !important;
-    /* flex-direction: column !important; */
     justify-content: center !important;
     align-items: center !important;
     flex-wrap: nowrap !important;
     margin-right:7px ;
 }
-/* #listBox a{
-    margin-right:7px !important;
-} */
 .card-link{
     text-decoration: none;
     width: 100% !important;
@@ -70,6 +71,7 @@
     background-color: white;
 }
 body{
+    background-color: #F1EFEC !important;
     font-family: "plus Jakarta Sans",sans-serif !important;
     min-height:100vh;
     display: flex;
@@ -125,6 +127,4 @@ body{
 #map { 
     height: 400px;
     width: 80vh;
-    /* justify-content: center !important;
-    align-items: center !important; */
  }
