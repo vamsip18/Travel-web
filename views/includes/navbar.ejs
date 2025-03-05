@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary border sticky-top">
+<nav class="navbar navbar-expand-md bg-body-tertiary border sticky-top" id="navbar">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <i class="fa-regular fa-compass"></i>
@@ -21,11 +21,11 @@
         <div class="navbar-nav ms-auto">
           
           <% if (!currentUser) { %>
-            <a class="nav-link" href="/users/login">Login</a>
-            <a class="nav-link" href="/users/signup">Signup</a>
+            <a class="nav-link" href="/users/login"><b>Login</b></a>
+            <a class="nav-link" href="/users/signup"><b>Signup</b></a>
           <% } %>
           <% if (currentUser) { %>
-            <a class="nav-link" href="/users/logout">Logout</a>
+            <a class="nav-link" href="/users/logout"><b>Logout</b></a>
           <% } %>
         </div>
       </div>
