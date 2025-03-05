@@ -79,6 +79,7 @@ body{
 }
 .container{
     flex: 1;
+    font-weight: normal !important
 }
 .head{
     align-items: center !important;
